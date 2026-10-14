@@ -1,0 +1,37 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    todo: ignore
+    invalid_annotation_target: ignore
+    use_build_context_synchronously: error
+    unawaited_futures: error
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "lib/l10n/generated/**"
+    - build/**
+    - android/**
+    - ios/**
+
+linter:
+  rules:
+    - always_declare_return_types
+    - avoid_print
+    - avoid_dynamic_calls
+    - avoid_relative_lib_imports
+    - cancel_subscriptions
+    - close_sinks
+    - directives_ordering
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_locals
+    - prefer_single_quotes
+    - require_trailing_commas
+    - sort_pub_dependencies
+    - unawaited_futures
+    - use_super_parameters
